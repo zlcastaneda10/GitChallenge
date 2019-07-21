@@ -1,4 +1,10 @@
-Write-Host 'Hello, World! from Power Shell'
+$Name = Read-Host -Prompt 'Write yout name'
 Write-Host 'Hello, ' $Name '! from Power Shell'
-[environment]::OSVersion.Version
-Version 2.0
+
+$OSVersion = [environment]::OSVersion.Version
+Write-Host $OSVersion
+Get-Date -Format "dddd MM/dd/yyyy HH:mm K"
+Write-Host 'Welcome ' $Name ' your operating system version is' $OSVersion
+
+Write-Host 'Version 2.1.1 '
+
